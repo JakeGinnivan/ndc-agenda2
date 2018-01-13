@@ -1,14 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import { fetchAgenda } from './fetch-agenda'
-import { Day } from './day'
-import { Tabs } from './tabs'
-
-const dayLookup = {
-    1: 'Wednesday',
-    2: 'Thursday',
-    3: 'Friday'
-}
+import { Agenda } from './agenda'
 
 class App extends Component {
     state = { talks: [] }
@@ -22,15 +15,7 @@ class App extends Component {
 
         return (
             <div className="App">
-                <Tabs
-                    tabs={days.map(day => ({
-                        header: dayLookup[day.key],
-                        data: day
-                    }))}
-                    renderData={data => (
-                        <Day day={data.key} talks={data.values} />
-                    )}
-                />
+                <Agenda days={days} />
             </div>
         )
     }

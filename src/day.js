@@ -3,7 +3,6 @@ import * as PropTypes from 'prop-types'
 import { talkShape } from './agenda'
 import { formatTime, groupBy } from './App'
 import { Timeslot } from './timeslot'
-import { Header } from './header'
 
 export const Day = ({ day, talks }) => (
     <React.Fragment>
