@@ -1,0 +1,529 @@
+[
+    {
+        "title": "Keynote:  What is programming anyway?",
+        "speaker": "Felienne",
+        "location": "Room 1",
+        "link":
+            "https://ndc-london.com/talk/keynote-what-is-programming-anyway/",
+        "tags": [""],
+        "startTime": { "hour": 9, "minutes": 0 },
+        "endTime": { "hour": 10, "minutes": 0 },
+        "day": 1
+    },
+    {
+        "title":
+            "IdentityServer for ASP.NET Core 2: Overview, New Features, Enhancements",
+        "speaker": "Dominick BaierBrock Allen",
+        "location": "Room 1",
+        "link":
+            "https://ndc-london.com/talk/identityserver-for-asp.net-core-2/",
+        "tags": ["security", "web"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 1
+    },
+    {
+        "title": "Sondheim, Seurat and Software: finding art in code",
+        "speaker": "Jon Skeet",
+        "location": "Room 2",
+        "link":
+            "https://ndc-london.com/talk/sondheim-seurat-and-software-finding-art-in-code/",
+        "tags": [""],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 1
+    },
+    {
+        "title": "The power of technical decisions ",
+        "speaker": "Jake Ginnivan",
+        "location": "Room 3",
+        "link": "https://ndc-london.com/talk/the-power-of-technical-decisions/",
+        "tags": ["soft-skills"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 1
+    },
+    {
+        "title": "Merge Hells!! Feature Toggles to the rescue",
+        "speaker": "Leena S N",
+        "location": "Room 4",
+        "link":
+            "https://ndc-london.com/talk/merge-hells-feature-toggles-to-the-rescue/",
+        "tags": ["agile", "continuous-delivery"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 1
+    },
+    {
+        "title": "The Power of Composition",
+        "speaker": "Scott Wlaschin",
+        "location": "Room 5",
+        "link": "https://ndc-london.com/talk/the-power-of-composition/",
+        "tags": ["functional"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 1
+    },
+    {
+        "title":
+            "Authorization is hard! Implementing Authorization in Web Applications and APIs",
+        "speaker": "Brock AllenDominick Baier",
+        "location": "Room 1",
+        "link": "https://ndc-london.com/talk/authorization-is-hard/",
+        "tags": ["security", "web"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 1
+    },
+    {
+        "title": "API Gateway to Service Mesh: Navigating a Changing Landscape",
+        "speaker": "Zhamak Dehghani",
+        "location": "Room 2",
+        "link": "https://ndc-london.com/talk/api-gateway-to-service-mesh/",
+        "tags": ["microservices", "cross-platform", "architecture", "devops"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 1
+    },
+    {
+        "title": "The Developer’s Guide to Promoting Your Work",
+        "speaker": "​Todd H. Gardner",
+        "location": "Room 3",
+        "link":
+            "https://ndc-london.com/talk/the-developers-guide-to-promoting-your-work/",
+        "tags": ["soft-skills"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 1
+    },
+    {
+        "title":
+            "You build it, you run it (why developers should also be on call)",
+        "speaker": "Chris O'Dell",
+        "location": "Room 4",
+        "link":
+            "https://ndc-london.com/talk/you-build-it-you-run-it-why-developers-should-also-be-on-call/",
+        "tags": ["devops", "people"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 1
+    },
+    {
+        "title":
+            "Beyond JavaScript Frameworks: Writing Reliable Web Apps With Elm",
+        "speaker": "Erik Wendel",
+        "location": "Room 5",
+        "link":
+            "https://ndc-london.com/talk/beyond-javascript-frameworks-writing-reliable-web-apps-with-elm/",
+        "tags": ["functional", "web", "javascript", "languages"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 1
+    },
+    {
+        "title": "I’m Pwned. You’re Pwned. We’re All Pwned.",
+        "speaker": "Troy Hunt",
+        "location": "Room 1",
+        "link":
+            "https://ndc-london.com/talk/im-pwned.-youre-pwned.-were-all-pwned./",
+        "tags": ["security"],
+        "startTime": { "hour": 13, "minutes": 40 },
+        "endTime": { "hour": 14, "minutes": 40 },
+        "day": 1
+    },
+    {
+        "title": "Diagnosing issues in ASP.NET Core Applications",
+        "speaker": "Damian EdwardsDavid Fowler",
+        "location": "Room 2",
+        "link":
+            "https://ndc-london.com/talk/diagnosing-issues-in-asp.net-core-applications/",
+        "tags": ["net", "web"],
+        "startTime": { "hour": 13, "minutes": 40 },
+        "endTime": { "hour": 14, "minutes": 40 },
+        "day": 1
+    },
+    {
+        "title":
+            "How to be a better interviewer, change the world and work with amazing people",
+        "speaker": "Suzi Edwards-Alexander",
+        "location": "Room 3",
+        "link":
+            "https://ndc-london.com/talk/how-to-be-a-better-interviewer-change-the-world-and-work-with-amazing-people/",
+        "tags": ["people"],
+        "startTime": { "hour": 13, "minutes": 40 },
+        "endTime": { "hour": 14, "minutes": 40 },
+        "day": 1
+    },
+    {
+        "title": "Go & Microservices",
+        "speaker": "Matt Heath",
+        "location": "Room 4",
+        "link": "https://ndc-london.com/talk/go-microservices/",
+        "tags": ["microservices", "languages"],
+        "startTime": { "hour": 13, "minutes": 40 },
+        "endTime": { "hour": 14, "minutes": 40 },
+        "day": 1
+    },
+    {
+        "title": "An introduction to Kotlin by example",
+        "speaker": "Dmitry Kandalov",
+        "location": "Room 5",
+        "link":
+            "https://ndc-london.com/talk/an-introduction-to-kotlin-by-example/",
+        "tags": ["languages"],
+        "startTime": { "hour": 13, "minutes": 40 },
+        "endTime": { "hour": 14, "minutes": 40 },
+        "day": 1
+    },
+    {
+        "title":
+            "Building a Raspberry Pi Kubernetes Cluster and running .NET Core",
+        "speaker": "Scott HanselmanAlex Ellis",
+        "location": "Room 1",
+        "link":
+            "https://ndc-london.com/talk/building-a-raspberry-pi-kubernetes-cluster-and-running-.net-core/",
+        "tags": ["net", "cloud", "web", "cross-platform"],
+        "startTime": { "hour": 9, "minutes": 0 },
+        "endTime": { "hour": 10, "minutes": 0 },
+        "day": 2
+    },
+    {
+        "title": "Starts with a search",
+        "speaker": "Maria Naggaga",
+        "location": "Room 2",
+        "link": "https://ndc-london.com/talk/starts-with-a-search/",
+        "tags": ["net", "people", "languages"],
+        "startTime": { "hour": 9, "minutes": 0 },
+        "endTime": { "hour": 10, "minutes": 0 },
+        "day": 2
+    },
+    {
+        "title": "Designing for speech",
+        "speaker": "Jessica Engström",
+        "location": "Room 3",
+        "link": "https://ndc-london.com/talk/designing-for-speech/",
+        "tags": ["ux"],
+        "startTime": { "hour": 9, "minutes": 0 },
+        "endTime": { "hour": 10, "minutes": 0 },
+        "day": 2
+    },
+    {
+        "title": "Mobile Architecture at Scale",
+        "speaker": "Gergely Orosz",
+        "location": "Room 4",
+        "link": "https://ndc-london.com/talk/mobile-architecture-at-scale/",
+        "tags": ["mobile"],
+        "startTime": { "hour": 9, "minutes": 0 },
+        "endTime": { "hour": 10, "minutes": 0 },
+        "day": 2
+    },
+    {
+        "title": "Nginx for .NET Developers",
+        "speaker": "Ian Cooper",
+        "location": "Room 5",
+        "link": "https://ndc-london.com/talk/nginx-for-net-developers/",
+        "tags": ["net", "web", "microservices"],
+        "startTime": { "hour": 9, "minutes": 0 },
+        "endTime": { "hour": 10, "minutes": 0 },
+        "day": 2
+    },
+    {
+        "title": "An Opinionated Approach to ASP.NET Core",
+        "speaker": "Scott Allen",
+        "location": "Room 1",
+        "link":
+            "https://ndc-london.com/talk/an-opinionated-approach-to-asp-net-core/",
+        "tags": ["net", "web"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 2
+    },
+    {
+        "title": "The Performance Investigator's Field Guide",
+        "speaker": "Sasha Goldshtein",
+        "location": "Room 2",
+        "link":
+            "https://ndc-london.com/talk/the-performance-investigators-field-guide/",
+        "tags": ["net", "devops"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 2
+    },
+    {
+        "title": "Amazon Machine Learning to Predict Responses",
+        "speaker": "Kesha Williams",
+        "location": "Room 3",
+        "link":
+            "https://ndc-london.com/talk/amazon-machine-learning-to-predict-responses/",
+        "tags": ["machine-learning", "iot", "cloud", "serverless"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 2
+    },
+    {
+        "title": "Jewelbots: How to Get More Girls Coding!",
+        "speaker": "Jennifer Wadella",
+        "location": "Room 4",
+        "link":
+            "https://ndc-london.com/talk/jewelbots-how-to-get-more-girls-coding/",
+        "tags": ["iot", "fun", "people"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 2
+    },
+    {
+        "title": "Building real-time API's with GraphQL",
+        "speaker": "Sandeep Singh",
+        "location": "Room 5",
+        "link":
+            "https://ndc-london.com/talk/building-real-time-apis-with-graphql/",
+        "tags": ["javascript", "design"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 2
+    },
+    {
+        "title": "Building for Resiliency and Scale in the Cloud",
+        "speaker": "Scott Allen",
+        "location": "Room 1",
+        "link":
+            "https://ndc-london.com/talk/building-for-resiliency-and-scale-in-the-cloud/",
+        "tags": ["cloud"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 2
+    },
+    {
+        "title": "What is this cloud native thing anyway?",
+        "speaker": "Sam Newman",
+        "location": "Room 2",
+        "link":
+            "https://ndc-london.com/talk/what-is-this-cloud-native-thing-anyway/",
+        "tags": ["cloud"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 2
+    },
+    {
+        "title": "Speak To Me: Voice App Conversation Practices",
+        "speaker": "Heather Downing",
+        "location": "Room 3",
+        "link":
+            "https://ndc-london.com/talk/speak-to-me-voice-app-conversation-practices/",
+        "tags": ["design", "architecture", "ux"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 2
+    },
+    {
+        "title": "Who Needs Dashboards?",
+        "speaker": "Jessica White",
+        "location": "Room 4",
+        "link": "https://ndc-london.com/talk/who-needs-dashboards/",
+        "tags": ["devops"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 2
+    },
+    {
+        "title": "How to win with automation and influence people",
+        "speaker": "Gwen Diagram",
+        "location": "Room 5",
+        "link":
+            "https://ndc-london.com/talk/how-to-win-with-automation-and-influence-people/",
+        "tags": ["testing", "continuous-delivery", "design"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 2
+    },
+    {
+        "title": "Hack Your Career",
+        "speaker": "Troy Hunt",
+        "location": "Room 1",
+        "link": "https://ndc-london.com/talk/hack-your-career/",
+        "tags": ["soft-skills"],
+        "startTime": { "hour": 13, "minutes": 40 },
+        "endTime": { "hour": 14, "minutes": 40 },
+        "day": 2
+    },
+    {
+        "title": "Deploying Windows Container based apps using Kubernetes",
+        "speaker": "Ben Hall",
+        "location": "Room 2",
+        "link":
+            "https://ndc-london.com/talk/deploying-windows-container-based-apps-using-kubernetes/",
+        "tags": ["devops"],
+        "startTime": { "hour": 13, "minutes": 40 },
+        "endTime": { "hour": 14, "minutes": 40 },
+        "day": 2
+    },
+    {
+        "title":
+            "Networks are like onions: Practical Deep Learning with TensorFlow",
+        "speaker": "Barbara Fusinska",
+        "location": "Room 3",
+        "link":
+            "https://ndc-london.com/talk/networks-are-like-onions-practical-deep-learning-with-tensorflow/",
+        "tags": ["big-data", "machine-learning"],
+        "startTime": { "hour": 13, "minutes": 40 },
+        "endTime": { "hour": 14, "minutes": 40 },
+        "day": 2
+    },
+    {
+        "title": "Pilot Decision Management",
+        "speaker": "Clifford Agius",
+        "location": "Room 4",
+        "link": "https://ndc-london.com/talk/pilot-decision-management/",
+        "tags": ["fun", "people", "soft-skills"],
+        "startTime": { "hour": 13, "minutes": 40 },
+        "endTime": { "hour": 14, "minutes": 40 },
+        "day": 2
+    },
+    {
+        "title": "Cake + .NET Core = Write Once, Build Anywhere",
+        "speaker": "Enrico Campidoglio",
+        "location": "Room 5",
+        "link":
+            "https://ndc-london.com/talk/cake-net-core-write-once-build-anywhere/",
+        "tags": ["net", "cross-platform", "continuous-delivery", "devops"],
+        "startTime": { "hour": 13, "minutes": 40 },
+        "endTime": { "hour": 14, "minutes": 40 },
+        "day": 2
+    },
+    {
+        "title": "Keynote: The Modern Cloud",
+        "speaker": "Scott Guthrie",
+        "location": "Room 1",
+        "link": "https://ndc-london.com/talk/keynote-the-modern-cloud/",
+        "tags": ["cloud", "cross-platform"],
+        "startTime": { "hour": 9, "minutes": 0 },
+        "endTime": { "hour": 10, "minutes": 0 },
+        "day": 3
+    },
+    {
+        "title": "Web Apps can’t really do *that*, can they?",
+        "speaker": "Steve Sanderson",
+        "location": "Room 1",
+        "link":
+            "https://ndc-london.com/talk/web-apps-cant-really-do-that-can-they/",
+        "tags": ["javascript", "web", "net"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 3
+    },
+    {
+        "title":
+            "The data dichotomy: Rethinking data and services with streams",
+        "speaker": "Ben Stopford",
+        "location": "Room 2",
+        "link":
+            "https://ndc-london.com/talk/the-data-dichotomy-rethinking-data-and-services-with-streams/",
+        "tags": ["database", "microservices", "big-data"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 3
+    },
+    {
+        "title": "This Startup Life: A Developer's Mistakes and Tips",
+        "speaker": "Ben Cull",
+        "location": "Room 3",
+        "link":
+            "https://ndc-london.com/talk/this-startup-life-a-developers-mistakes-and-tips/",
+        "tags": ["people", "soft-skills"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 3
+    },
+    {
+        "title":
+            "Xcode to Unreal Engine - Lessons Learned from Doing the Impossible",
+        "speaker": "Ellen Mey",
+        "location": "Room 4",
+        "link":
+            "https://ndc-london.com/talk/xcode-to-unreal-engine-lessons-learned-from-doing-the-impossible/",
+        "tags": ["mobile", "cross-platform"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 3
+    },
+    {
+        "title": "Easier AI allows everyone to build smart apps",
+        "speaker": "Azadeh KhojandiDavid Burela",
+        "location": "Room 5",
+        "link":
+            "https://ndc-london.com/talk/easier-ai-allows-everyone-to-build-smart-apps/",
+        "tags": ["cloud", "machine-learning", "javascript", "fun"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 3
+    },
+    {
+        "title":
+            "Inclusive Design Series: Real-world accessibility insights from usability case studies",
+        "speaker": "Elle Waters",
+        "location": "Workshop Room",
+        "link":
+            "https://ndc-london.com/talk/inclusive-design-series-real-world-accessibility-insights-from-usability-case-studies/",
+        "tags": ["design"],
+        "startTime": { "hour": 10, "minutes": 20 },
+        "endTime": { "hour": 11, "minutes": 20 },
+        "day": 3
+    },
+    {
+        "title":
+            "The Hello World Show Live with Scott Hanselman, Troy Hunt, Felienne, and Jon Skeet",
+        "speaker":
+            "Troy HuntScott HanselmanFelienneJon SkeetSpencer SchneidenbachHeather Downing",
+        "location": "Room 1",
+        "link":
+            "https://ndc-london.com/talk/hello-world-show-live-on-stage-with-heather-and-spencer/",
+        "tags": ["fun", "people"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 3
+    },
+    {
+        "title": "Painless visual testing",
+        "speaker": "Gojko Adzic",
+        "location": "Room 2",
+        "link": "https://ndc-london.com/talk/painless-visual-testing/",
+        "tags": ["testing"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 3
+    },
+    {
+        "title":
+            "GitOps - Using Git as your source of truth for build, deploy and observability",
+        "speaker": "Alexis Richardson",
+        "location": "Room 3",
+        "link":
+            "https://ndc-london.com/talk/gitops-using-git-as-your-source-of-truth-for-build-deploy-and-observability/",
+        "tags": ["cloud"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 3
+    },
+    {
+        "title": "Why you should use React Native for your next mobile app",
+        "speaker": "Gwendolyn Faraday",
+        "location": "Room 4",
+        "link":
+            "https://ndc-london.com/talk/why-you-should-use-react-native-for-your-next-mobile-app/",
+        "tags": ["javascript", "mobile"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 3
+    },
+    {
+        "title": "Developing for Mixed Reality with HoloLens",
+        "speaker": "Rafał Legiędź",
+        "location": "Room 5",
+        "link":
+            "https://ndc-london.com/talk/developing-for-mixed-reality-with-hololens/",
+        "tags": ["mobile", "microsoft"],
+        "startTime": { "hour": 11, "minutes": 40 },
+        "endTime": { "hour": 12, "minutes": 40 },
+        "day": 3
+    }
+]
