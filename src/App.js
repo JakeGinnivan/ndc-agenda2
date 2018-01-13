@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
 import { fetchAgenda } from './agenda'
-import { setInterval } from 'timers'
 import { Day } from './day'
 
 class App extends Component {

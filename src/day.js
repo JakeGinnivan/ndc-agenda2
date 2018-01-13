@@ -3,10 +3,11 @@ import * as PropTypes from 'prop-types'
 import { talkShape } from './agenda'
 import { formatTime, groupBy } from './App'
 import { Timeslot } from './timeslot'
+import { Header } from './header'
 
 export const Day = ({ day, talks }) => (
     <React.Fragment>
-        <h1>Day {day}</h1>
+        <Header>Day {day}</Header>
         {groupBy(
             talks,
             talk => ({
