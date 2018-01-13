@@ -1,4 +1,20 @@
 import * as cheerio from 'cheerio'
+import * as propTypes from 'prop-types'
+
+const timeShape = propTypes.shape({
+    hour: propTypes.number.isRequired,
+    minutes: propTypes.number.isRequired
+})
+export const talkShape = propTypes.shape({
+    title: propTypes.string.isRequired,
+    speaker: propTypes.string.isRequired,
+    location: propTypes.string.isRequired,
+    link: propTypes.string.isRequired,
+    tags: propTypes.arrayOf(propTypes.string).isRequired,
+    startTime: timeShape.isRequired,
+    endTime: timeShape.isRequired,
+    day: propTypes.number.isRequired
+})
 
 export const fetchAgenda = async () => {
     return require('./agenda.json')

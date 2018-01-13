@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
 import './App.css'
 import { fetchAgenda } from './agenda'
 import { setInterval } from 'timers'
+import { Day } from './day'
 
 class App extends Component {
     state = { talks: [] }
@@ -17,32 +17,20 @@ class App extends Component {
         return (
             <div className="App">
                 {days.map(({ key, values: talks }) => (
-                    <React.Fragment>
-                        <h1>Day {key}</h1>
-                        {groupBy(talks, talk => formatTime(talk.startTime)).map(
-                            timeSlot => (
-                                <React.Fragment>
-                                    <div>{timeSlot.key}</div>
-                                    {timeSlot.values.map(talk => (
-                                        <div>{talk.title}</div>
-                                    ))}
-                                </React.Fragment>
-                            )
-                        )}
-                    </React.Fragment>
+                    <Day day={key} talks={talks} />
                 ))}
             </div>
         )
     }
 }
 
-function formatTime(time) {
+export function formatTime(time) {
     const minutes = time.minutes.toString()
     const formattedMinutes = minutes.length === 1 ? `0${minutes}` : minutes
     return `${time.hour}:${formattedMinutes}`
 }
 
-function groupBy(items, selector) {
+export function groupBy(items, selector) {
     const lookup = {}
     return items.reduce((acc, val) => {
         const key = selector(val)
