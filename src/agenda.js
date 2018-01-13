@@ -1,7 +1,7 @@
 import * as cheerio from 'cheerio'
 import * as propTypes from 'prop-types'
 
-const timeShape = propTypes.shape({
+export const timeShape = propTypes.shape({
     hour: propTypes.number.isRequired,
     minutes: propTypes.number.isRequired
 })
