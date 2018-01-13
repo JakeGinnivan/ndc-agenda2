@@ -7,7 +7,6 @@ import { Header } from './header'
 
 export const Day = ({ day, talks }) => (
     <React.Fragment>
-        <Header>Day {day}</Header>
         {groupBy(
             talks,
             talk => ({
