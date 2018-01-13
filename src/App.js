@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import { fetchAgenda } from './agenda'
+import { fetchAgenda } from './fetch-agenda'
 import { Day } from './day'
 import { Tabs } from './tabs'
 
