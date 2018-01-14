@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as PropTypes from 'prop-types'
-import { talkShape } from './agenda'
+import { talkShape } from './fetch-agenda'
 import { formatTime, groupBy } from './App'
 import { Timeslot } from './timeslot'
 

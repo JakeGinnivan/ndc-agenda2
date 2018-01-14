@@ -1,21 +1,20 @@
 import React, { Component } from 'react'
 import './App.css'
-import { fetchAgenda } from './fetch-agenda'
 import { Agenda } from './agenda'
+import { BrowserRouter } from 'react-router-dom'
+import { Route, Switch } from 'react-router'
+import { NotFound } from './not-found'
 
 class App extends Component {
-    state = { talks: [] }
-
-    componentWillMount() {
-        fetchAgenda().then(value => this.setState({ talks: value }))
-    }
-
     render() {
-        const days = groupBy(this.state.talks, talk => talk.day)
-
         return (
             <div className="App">
-                <Agenda days={days} />
+                <BrowserRouter>
+                    <Switch>
+                        <Route path="/agenda" component={Agenda} />
+                        <Route component={NotFound} />
+                    </Switch>
+                </BrowserRouter>
             </div>
         )
     }

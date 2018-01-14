@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as propTypes from 'prop-types'
-import { timeShape, talkShape } from './agenda'
+import { timeShape, talkShape } from './fetch-agenda'
 import { Talk } from './talk'
 
 export const Timeslot = ({ start, end, talks }) => (
