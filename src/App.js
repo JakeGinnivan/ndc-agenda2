@@ -11,6 +11,7 @@ class App extends Component {
             <div className="App">
                 <BrowserRouter>
                     <Switch>
+                        <Route path="/agenda/:day" component={Agenda} />
                         <Route path="/agenda" component={Agenda} />
                         <Route component={NotFound} />
                     </Switch>

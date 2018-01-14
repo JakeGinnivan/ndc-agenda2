@@ -22,6 +22,7 @@ export class Agenda extends React.Component {
 
         return (
             <Tabs
+                currentDay={this.props.match.params.day}
                 tabs={days.map(day => ({
                     header: dayLookup[day.key],
                     data: day

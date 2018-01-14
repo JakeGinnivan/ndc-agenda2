@@ -1,33 +1,21 @@
 import * as React from 'react'
 import * as propTypes from 'prop-types'
+import { NavLink } from 'react-router-dom'
+import * as glamorous from 'glamorous'
 
-export const TabHeader = ({ onSelect, selected, children }) => (
-    <div
-        onClick={onSelect}
-        style={{ fontWeight: selected ? 'bold' : 'normal' }}
-    >
-        {children}
-    </div>
+export const TabHeader = ({ index, children }) => (
+    <NavLink to={`/agenda/${index}`}>{children}</NavLink>
 )
 
 export class Tabs extends React.Component {
-    state = { selectedIndex: 0 }
-
     render() {
-        const contentData = this.props.tabs[this.state.selectedIndex]
+        const contentData = this.props.tabs[this.props.currentDay || 0]
 
         return (
             <React.Fragment>
                 <div>
                     {this.props.tabs.map((tab, index) => (
-                        <TabHeader
-                            selected={index === this.state.selectedIndex}
-                            onSelect={() =>
-                                this.setState({ selectedIndex: index })
-                            }
-                        >
-                            {tab.header}
-                        </TabHeader>
+                        <TabHeader index={index}>{tab.header}</TabHeader>
                     ))}
                 </div>
                 <div>
@@ -39,6 +27,7 @@ export class Tabs extends React.Component {
 }
 
 Tabs.propTypes = {
+    currentDay: propTypes.number,
     tabs: propTypes.arrayOf(
         propTypes.shape({
             header: propTypes.string.isRequired,
