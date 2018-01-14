@@ -5,14 +5,46 @@ import { BrowserRouter } from 'react-router-dom'
 import { Route, Switch } from 'react-router'
 import { NotFound } from './not-found'
 
+const mountDebugger = (Wrap, name) => {
+    return class MountDebugger extends React.Component {
+        componentWillMount() {
+            console.log(name, 'will mount')
+        }
+        componentDidMount() {
+            console.log(name, 'mounted')
+        }
+        componentDidUpdate() {
+            console.log(name, 'did update')
+        }
+        componentWillReceiveProps() {
+            console.log(name, 'will receive props')
+        }
+        componentWillUnmount() {
+            console.log(name, 'will unmount')
+        }
+        componentWillUpdate() {
+            console.log(name, 'will update')
+        }
+        shouldComponentUpdate() {
+            console.log(name, 'should update?')
+            return true
+        }
+        render() {
+            return <Wrap {...this.props} />
+        }
+    }
+}
+
 class App extends Component {
     render() {
         return (
             <div className="App">
                 <BrowserRouter>
                     <Switch>
-                        <Route path="/agenda/:day" component={Agenda} />
-                        <Route path="/agenda" component={Agenda} />
+                        <Route
+                            path="/agenda"
+                            component={mountDebugger(Agenda, 'agenda')}
+                        />
                         <Route component={NotFound} />
                     </Switch>
                 </BrowserRouter>
