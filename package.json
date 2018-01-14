@@ -6,6 +6,7 @@
     "@types/react-router-dom": "^4.2.3",
     "cheerio": "^1.0.0-rc.2",
     "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "glamor": "^2.20.40",
     "glamorous": "^4.11.2",
     "react": "^16.2.0",

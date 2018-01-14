@@ -5,17 +5,19 @@ import * as glamorous from 'glamorous'
 import { withRouter, Route } from 'react-router'
 
 export const TabHeader = ({ path, index, children }) => (
-    <NavLink to={`${path}/${index}`}>{children}</NavLink>
+    <NavLink to={`${path}${index}`}>{children}</NavLink>
 )
 
 export const Tabs = withRouter(
     class TabsComponent extends React.Component {
         render() {
-            const currentPath = this.props.match.url
-
+            const currentPath =
+                this.props.match.url.substr(-1) === '/'
+                    ? this.props.match.url
+                    : `${this.props.match.url}/`
             return (
                 <Route
-                    path={`${currentPath}/:selectedTab?`}
+                    path={`${currentPath}:selectedTab?`}
                     render={routeProps => {
                         const contentData = this.props.tabs[
                             routeProps.match.params.selectedTab || 0
@@ -26,7 +28,8 @@ export const Tabs = withRouter(
                                 <div>
                                     {this.props.tabs.map((tab, index) => (
                                         <TabHeader
-                                            path={this.props.match.url}
+                                            key={index}
+                                            path={currentPath}
                                             index={index}
                                         >
                                             {tab.header}
@@ -50,7 +53,8 @@ Tabs.propTypes = {
     tabs: propTypes.arrayOf(
         propTypes.shape({
             header: propTypes.string.isRequired,
-            data: propTypes.object.isRequired
+            data: propTypes.oneOfType([propTypes.object, propTypes.string])
+                .isRequired
         })
     ),
     renderData: propTypes.func.isRequired
