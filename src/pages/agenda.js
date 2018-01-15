@@ -22,6 +22,7 @@ export class Agenda extends React.Component {
 
         return (
             <Tabs
+                selectedTab={this.props.match.params.day}
                 tabs={days.map(day => ({
                     header: `Day ${day.key}`,
                     data: day

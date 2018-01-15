@@ -1,12 +1,13 @@
 import * as React from "react";
-
+import { Link } from "react-router-dom";
 export const TabHeader = ({
     selectedTab,
     currentTabIndex,
     header,
     onClick
 }) => (
-    <div
+    <Link
+        to={`/agenda/${currentTabIndex}`}
         style={{
             display: "inline-block",
             fontSize: "6rem",
@@ -16,17 +17,14 @@ export const TabHeader = ({
                     ? "underline"
                     : undefined
         }}
-        onClick={onClick}
     >
         {header}
-    </div>
+    </Link>
 );
 export class Tabs extends React.Component {
-    state = { selectedTab: 0 };
-
     render() {
         const tabData = this.props.tabs[
-            this.state.selectedTab
+            this.props.selectedTab
         ];
         return (
             <React.Fragment>
@@ -34,12 +32,7 @@ export class Tabs extends React.Component {
                     <TabHeader
                         currentTabIndex={index}
                         header={tab.header}
-                        onClick={() =>
-                            this.setState({
-                                selectedTab: index
-                            })
-                        }
-                        selectedTab={this.state.selectedTab}
+                        selectedTab={this.props.selectedTab}
                     />
                 ))}
                 {tabData &&
