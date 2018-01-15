@@ -3,6 +3,7 @@ import "./App.css";
 import { fetchAgenda } from "./fetch-agenda";
 import { groupBy } from "./utils";
 import { Day } from "./components/day";
+import { Tabs } from "./components/tabs";
 
 class App extends Component {
     state = {
@@ -22,10 +23,18 @@ class App extends Component {
 
         return (
             <div className="App">
-                {days.map(day => {
-                    const { key, values: talks } = day;
-                    return <Day day={key} talks={talks} />;
-                })}
+                <Tabs
+                    tabs={days.map(day => ({
+                        header: `Day ${day.key}`,
+                        data: day
+                    }))}
+                    renderTab={data => (
+                        <Day
+                            day={data.key}
+                            talks={data.values}
+                        />
+                    )}
+                />
             </div>
         );
     }

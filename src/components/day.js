@@ -17,7 +17,6 @@ export const Day = ({ day, talks }) => {
     }));
     return (
         <React.Fragment>
-            <h1>Day {day}</h1>
             {timeslots.map(timeslot => (
                 <Timeslot
                     {...timeslot}
