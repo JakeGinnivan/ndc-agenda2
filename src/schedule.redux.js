@@ -17,7 +17,8 @@ export default (state = initalAppState, action) => {
                     action.payload.talk
                 ]
             };
-    }
 
-    return state;
+        default:
+            return state;
+    }
 };

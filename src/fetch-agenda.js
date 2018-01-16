@@ -24,6 +24,7 @@ export const fetchAgenda = async () => {
     const body = await response.text();
     const talks = [];
     const $ = cheerio.load(body);
+    // eslint-disable-next-line array-callback-return
     $("section.day").map((i, el) => {
         // prettier-ignore
         const dayElements = el.childNodes
