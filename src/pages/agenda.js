@@ -30,6 +30,13 @@ export class Agenda extends React.Component {
                     <Day
                         day={data.key}
                         talks={data.values}
+                        addToSchedule={
+                            this.props.addToSchedule
+                        }
+                        removeFromSchedule={
+                            this.props.removeFromSchedule
+                        }
+                        mySchedule={this.props.mySchedule}
                     />
                 )}
             />

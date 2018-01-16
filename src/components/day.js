@@ -2,7 +2,13 @@ import * as React from "react";
 import { groupBy, formatTime } from "../utils";
 import { Timeslot } from "./timeslot";
 
-export const Day = ({ day, talks }) => {
+export const Day = ({
+    day,
+    talks,
+    addToSchedule,
+    removeFromSchedule,
+    mySchedule
+}) => {
     const timeslots = groupBy(
         talks,
         talk => ({
@@ -23,6 +29,9 @@ export const Day = ({ day, talks }) => {
                     start={timeslot.start}
                     end={timeslot.end}
                     talks={timeslot.talks}
+                    addToSchedule={addToSchedule}
+                    removeFromSchedule={removeFromSchedule}
+                    mySchedule={mySchedule}
                 />
             ))}
         </React.Fragment>

@@ -5,8 +5,13 @@ import { Agenda } from "./pages/agenda";
 import { Home } from "./pages/home";
 
 import "./App.css";
+import { ScheduleBuilder } from "./pages/schedule-builder";
 
 class App extends Component {
+    state = {
+        mySchedule: []
+    };
+
     render() {
         return (
             <BrowserRouter>
@@ -14,6 +19,9 @@ class App extends Component {
                     <div>
                         <Link to="/">Home</Link>
                         <Link to="/agenda">Agenda</Link>
+                        <Link to="/schedule-builder">
+                            Schedule Builder
+                        </Link>
                     </div>
                     <Switch>
                         <Route
@@ -23,7 +31,47 @@ class App extends Component {
                         />
                         <Route
                             path="/agenda"
-                            component={Agenda}
+                            render={renderProps => (
+                                <Agenda
+                                    {...renderProps}
+                                    addToSchedule={talk => {
+                                        this.setState(
+                                            state => ({
+                                                mySchedule: [
+                                                    ...state.mySchedule,
+                                                    talk
+                                                ]
+                                            })
+                                        );
+                                    }}
+                                    removeFromSchedule={talk => {
+                                        this.setState(
+                                            state => {
+                                                const newSchedule = [
+                                                    ...state.mySchedule
+                                                ];
+                                                newSchedule.splice(
+                                                    newSchedule.indexOf(
+                                                        talk
+                                                    ),
+                                                    1
+                                                );
+                                                return {
+                                                    mySchedule: newSchedule
+                                                };
+                                            }
+                                        );
+                                    }}
+                                    mySchedule={
+                                        this.state
+                                            .mySchedule
+                                    }
+                                />
+                            )}
+                        />
+                        <Route
+                            path="/schedule-builder"
+                            component={ScheduleBuilder}
                         />
                     </Switch>
                 </div>
