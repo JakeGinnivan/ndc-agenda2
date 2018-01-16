@@ -3,6 +3,7 @@ import { fetchAgenda } from "../fetch-agenda";
 import { groupBy } from "../utils";
 import { Day } from "../components/day";
 import { Tabs } from "../components/tabs";
+import { MySchedule } from "../components/my-schedule";
 
 export class Agenda extends React.Component {
     state = {
@@ -21,25 +22,21 @@ export class Agenda extends React.Component {
         );
 
         return (
-            <Tabs
-                tabs={days.map(day => ({
-                    header: `Day ${day.key}`,
-                    data: day
-                }))}
-                renderTab={data => (
-                    <Day
-                        day={data.key}
-                        talks={data.values}
-                        addToSchedule={
-                            this.props.addToSchedule
-                        }
-                        removeFromSchedule={
-                            this.props.removeFromSchedule
-                        }
-                        mySchedule={this.props.mySchedule}
-                    />
-                )}
-            />
+            <React.Fragment>
+                <MySchedule />
+                <Tabs
+                    tabs={days.map(day => ({
+                        header: `Day ${day.key}`,
+                        data: day
+                    }))}
+                    renderTab={data => (
+                        <Day
+                            day={data.key}
+                            talks={data.values}
+                        />
+                    )}
+                />
+            </React.Fragment>
         );
     }
 }

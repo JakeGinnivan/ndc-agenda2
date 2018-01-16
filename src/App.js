@@ -3,9 +3,20 @@ import { BrowserRouter, Link } from "react-router-dom";
 import { Route, Switch } from "react-router";
 import { Agenda } from "./pages/agenda";
 import { Home } from "./pages/home";
+import { combineReducers, createStore } from "redux";
+import { Provider } from "react-redux";
+import schedule from "./schedule.redux";
 
 import "./App.css";
 import { ScheduleBuilder } from "./pages/schedule-builder";
+
+const store = createStore(
+    combineReducers({
+        schedule
+    }),
+    window.__REDUX_DEVTOOLS_EXTENSION__ &&
+        window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 class App extends Component {
     state = {
@@ -14,68 +25,34 @@ class App extends Component {
 
     render() {
         return (
-            <BrowserRouter>
-                <div className="App">
-                    <div>
-                        <Link to="/">Home</Link>
-                        <Link to="/agenda">Agenda</Link>
-                        <Link to="/schedule-builder">
-                            Schedule Builder
-                        </Link>
+            <Provider store={store}>
+                <BrowserRouter>
+                    <div className="App">
+                        <div>
+                            <Link to="/">Home</Link>
+                            <Link to="/agenda">Agenda</Link>
+                            <Link to="/schedule-builder">
+                                Schedule Builder
+                            </Link>
+                        </div>
+                        <Switch>
+                            <Route
+                                exact
+                                path="/"
+                                component={Home}
+                            />
+                            <Route
+                                path="/agenda"
+                                component={Agenda}
+                            />
+                            <Route
+                                path="/schedule-builder"
+                                component={ScheduleBuilder}
+                            />
+                        </Switch>
                     </div>
-                    <Switch>
-                        <Route
-                            exact
-                            path="/"
-                            component={Home}
-                        />
-                        <Route
-                            path="/agenda"
-                            render={renderProps => (
-                                <Agenda
-                                    {...renderProps}
-                                    addToSchedule={talk => {
-                                        this.setState(
-                                            state => ({
-                                                mySchedule: [
-                                                    ...state.mySchedule,
-                                                    talk
-                                                ]
-                                            })
-                                        );
-                                    }}
-                                    removeFromSchedule={talk => {
-                                        this.setState(
-                                            state => {
-                                                const newSchedule = [
-                                                    ...state.mySchedule
-                                                ];
-                                                newSchedule.splice(
-                                                    newSchedule.indexOf(
-                                                        talk
-                                                    ),
-                                                    1
-                                                );
-                                                return {
-                                                    mySchedule: newSchedule
-                                                };
-                                            }
-                                        );
-                                    }}
-                                    mySchedule={
-                                        this.state
-                                            .mySchedule
-                                    }
-                                />
-                            )}
-                        />
-                        <Route
-                            path="/schedule-builder"
-                            component={ScheduleBuilder}
-                        />
-                    </Switch>
-                </div>
-            </BrowserRouter>
+                </BrowserRouter>
+            </Provider>
         );
     }
 }
