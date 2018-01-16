@@ -1,13 +1,15 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
+
 export const TabHeader = ({
     selectedTab,
     currentTabIndex,
     header,
-    onClick
+    onClick,
+    path
 }) => (
     <Link
-        to={`/agenda/${currentTabIndex}`}
+        to={`${path}/${currentTabIndex}`}
         style={{
             display: "inline-block",
             fontSize: "6rem",
@@ -21,23 +23,41 @@ export const TabHeader = ({
         {header}
     </Link>
 );
-export class Tabs extends React.Component {
-    render() {
-        const tabData = this.props.tabs[
-            this.props.selectedTab
-        ];
-        return (
-            <React.Fragment>
-                {this.props.tabs.map((tab, index) => (
-                    <TabHeader
-                        currentTabIndex={index}
-                        header={tab.header}
-                        selectedTab={this.props.selectedTab}
-                    />
-                ))}
-                {tabData &&
-                    this.props.renderTab(tabData.data)}
-            </React.Fragment>
-        );
+export const Tabs = withRouter(
+    class TabsComponent extends React.Component {
+        renderTabs = routeProps => {
+            const selectedTab =
+                routeProps.match.params.selectedTab || 0;
+
+            const contentData = this.props.tabs[
+                selectedTab
+            ];
+
+            return (
+                <React.Fragment>
+                    {this.props.tabs.map((tab, index) => (
+                        <TabHeader
+                            path={currentPath}
+                            currentTabIndex={index}
+                            header={tab.header}
+                            selectedTab={selectedTab}
+                        />
+                    ))}
+                    {tabData &&
+                        this.props.renderTab(tabData.data)}
+                </React.Fragment>
+            );
+        };
+
+        render() {
+            const currentPath = this.props.match.url;
+
+            return (
+                <Route
+                    path={`${currentPath}/:selectedTab?`}
+                    render={this.renderTabs}
+                />
+            );
+        }
     }
-}
+);

@@ -22,7 +22,7 @@ class App extends Component {
                             component={Home}
                         />
                         <Route
-                            path="/agenda/:day?"
+                            path="/agenda"
                             component={Agenda}
                         />
                     </Switch>
