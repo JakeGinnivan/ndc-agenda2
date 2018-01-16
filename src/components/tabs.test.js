@@ -29,7 +29,7 @@ describe("tabs control", () => {
         );
     });
 
-    it("Can switch to the second tab", async () => {
+    it("Can switch to the second tab", async wrapper => {
         const wrapper = mount(
             <MemoryRouter>
                 <Tabs
@@ -55,5 +55,13 @@ describe("tabs control", () => {
             .filterWhere(link => link.text() === "Tab2");
 
         tab2Link.simulate("click", { button: 0 });
+
+        await new Promise(resolve => setTimeout(resolve));
+
+        wrapper.update();
+
+        expect(wrapper.find("#contents").text()).toBe(
+            "Tab2"
+        );
     });
 });
