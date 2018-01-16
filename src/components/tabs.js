@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter, Route } from "react-router-dom";
 
 export const TabHeader = ({
     selectedTab,
@@ -23,6 +23,7 @@ export const TabHeader = ({
         {header}
     </Link>
 );
+
 export const Tabs = withRouter(
     class TabsComponent extends React.Component {
         renderTabs = routeProps => {
@@ -37,14 +38,17 @@ export const Tabs = withRouter(
                 <React.Fragment>
                     {this.props.tabs.map((tab, index) => (
                         <TabHeader
-                            path={currentPath}
+                            key={tab.header}
+                            path={this.props.match.url}
                             currentTabIndex={index}
                             header={tab.header}
                             selectedTab={selectedTab}
                         />
                     ))}
-                    {tabData &&
-                        this.props.renderTab(tabData.data)}
+                    {contentData &&
+                        this.props.renderTab(
+                            contentData.data
+                        )}
                 </React.Fragment>
             );
         };
