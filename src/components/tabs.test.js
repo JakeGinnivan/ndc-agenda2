@@ -1,8 +1,8 @@
 import * as React from "react";
 import { mount, configure } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
 import { Tabs } from "./tabs";
 import { MemoryRouter, Link } from "react-router-dom";
+const Adapter = require("enzyme-adapter-react-16");
 
 configure({ adapter: new Adapter() });
 
@@ -29,7 +29,7 @@ describe("tabs control", () => {
         );
     });
 
-    it("Can switch to the second tab", async wrapper => {
+    it("Can switch to the second tab", async () => {
         const wrapper = mount(
             <MemoryRouter>
                 <Tabs
